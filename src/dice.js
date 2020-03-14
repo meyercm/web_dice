@@ -7,7 +7,7 @@ const randomRoll = (max) => 1 + Math.floor(Math.random() * Math.floor(max));
 class Die extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {value: randomRoll(props.sides), history: []};
+    this.state = { history: [] };
   }
 
   reroll = () => {
